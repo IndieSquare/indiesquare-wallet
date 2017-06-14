@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>35204291973-7mfrcq4gdatvjcmrtkp7doh3p91nbjal.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.35204291973-7mfrcq4gdatvjcmrtkp7doh3p91nbjal</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA97fSdMbr9hB0Z1YeJuw7XcaiUeRzay0s</string>
+	<key>GCM_SENDER_ID</key>
+	<string>35204291973</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>inc.lireneosoft.counterparty</string>
+	<key>PROJECT_ID</key>
+	<string>indiesquare-1112</string>
+	<key>STORAGE_BUCKET</key>
+	<string>indiesquare-1112.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:35204291973:ios:79ec6e842e002426</string>
+	<key>DATABASE_URL</key>
+	<string>https://indiesquare-1112.firebaseio.com</string>
+</dict>
+</plist>

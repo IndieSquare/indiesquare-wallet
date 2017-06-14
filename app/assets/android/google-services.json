@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "35204291973",
+    "firebase_url": "https://indiesquare-1112.firebaseio.com",
+    "project_id": "indiesquare-1112",
+    "storage_bucket": "indiesquare-1112.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35204291973:android:79ec6e842e002426",
+        "android_client_info": {
+          "package_name": "inc.lireneosoft.counterparty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35204291973-ua56vg6mfjjs6uol7i7fb83jraoff1s6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "inc.lireneosoft.counterparty",
+            "certificate_hash": "fa10acef8ecbaa3d7c0056efb043c057167970bd"
+          }
+        },
+        {
+          "client_id": "35204291973-86cca1dknalgu5feul1arudqkm71aqtc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "35204291973-e3b2k1sf69u2621jnefvp01g3tdelftu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlMW_UBN64JYa_9PWC_lgrKPqV12UcxW4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

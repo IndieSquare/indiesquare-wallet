@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>securerand</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+        function generateRandom() {
+           var key = new Uint8Array(2048);
+			window.crypto.getRandomValues(key);
+			var stringKey1 = convertUint8ArrayToBinaryString(key);
+			stringKey2 = "";
+			for (i=0; i < stringKey1.length; i++) {
+       			  stringKey2 +=stringKey1[i].charCodeAt(0).toString(2);
+   		 	}
+			
+            Ti.App.fireEvent('app:fromWebView', { message: stringKey2});
+        }
+        
+        function convertUint8ArrayToBinaryString(u8Array) {
+			var i, len = u8Array.length, b_str = "";
+			for (i=0; i<len; i++) {
+				b_str += String.fromCharCode(u8Array[i]);
+			}
+			return b_str;
+		}
+	
+		</script>
+    </head>
+    <body onload="generateRandom()">
+    </body>
+</html>

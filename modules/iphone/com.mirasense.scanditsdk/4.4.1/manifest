@@ -1,0 +1,19 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 4.4.1
+apiversion: 2
+architectures: armv7 i386 x86_64 arm64
+description: Scandit SDK Barcode Scanner Module
+author: Scandit AG
+license: All rights reserved
+copyright: Copyright (c) 2014 by Scandit AG
+
+
+# these should not be edited
+name: scanditsdk
+moduleid: com.mirasense.scanditsdk
+guid: 75D3BDEC-E660-4727-BD86-D3962830BDDA
+platform: iphone
+minsdk: 2.1.0.GA

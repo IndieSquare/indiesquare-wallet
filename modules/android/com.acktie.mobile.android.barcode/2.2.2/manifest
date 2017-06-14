@@ -1,0 +1,19 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 2.2.2
+apiversion: 3
+architectures: armeabi-v7a x86
+description: Simple to use Barcode Appcelerator module - updated to install on marshmallow and to correct camera orientation
+author: Tony Nuzzi
+license: See LICENSE file
+copyright: Copyright 2013 Acktie, LLC, All Rights Reserved
+
+# these should not be edited
+name: acktiemobileandroidbarcode
+moduleid: com.acktie.mobile.android.barcode
+#guid: acd6b9c5-42b4-432b-b126-f46a36d8fd52
+guid: E81B578A-8E32-4DA2-9B36-90C5A9781A25
+platform: android
+minsdk: 6.0.0.GA

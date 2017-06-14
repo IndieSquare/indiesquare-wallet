@@ -1,0 +1,42 @@
+{
+	"env:development": {
+		"isLocal": true,
+		"isDevelopment": true,
+		"api_uri": "https://api.indiesquare.me/",
+		"web_uri": "https://wallet.indiesquare.me/",
+		"res_uri": "https://res.indiesquare.me/",
+		"pubsub_uri": "https://indiesquare.me/pubsub/",
+		"dashboard_uri": "https://indiesquare.me/",
+		"walletapp_uri": "https://walletapp.indiesquare.me/",
+		"connects_uri": "https://connects.indiesquare.me/"
+	},
+	"env:test": {
+		"isLocal": false,
+		"isDevelopment": true,
+		"api_uri": "https://api.indiesquare.me/",
+		"web_uri": "https://wallet.indiesquare.me/",
+		"res_uri": "https://res.indiesquare.me/",
+		"pubsub_uri": "https://indiesquare.me/pubsub/",
+		"dashboard_uri": "https://indiesquare.me/",
+		"walletapp_uri": "https://walletapp.indiesquare.me/",
+		"connects_uri": "https://connects.indiesquare.me/"
+	},
+	"env:production": {
+		"isLocal": false,
+		"isDevelopment": false,
+		"api_uri": "https://api.indiesquare.me/",
+		"web_uri": "https://wallet.indiesquare.me/",
+		"res_uri": "https://res.indiesquare.me/",
+		"pubsub_uri": "https://indiesquare.me/pubsub/",
+		"dashboard_uri": "https://indiesquare.me/",
+		"walletapp_uri": "https://walletapp.indiesquare.me/",
+		"connects_uri": "https://connects.indiesquare.me/"
+	},
+	"os:android": {
+		"scheme_url": "Ti.Android.currentActivity.intent.data"
+	},
+	"os:ios": {
+		"scheme_url": null
+	},
+	"dependencies": {}
+}

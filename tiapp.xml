@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>inc.lireneosoft.counterparty</id>
+    <name>IndieSquareWallet</name>
+    <version>1.1.0</version>
+    <publisher>IndieSquare</publisher>
+    <url>https://wallet.indiesquare.me</url>
+    <description>Simple CounterWallet for mobile.</description>
+    <copyright>© 2015-2017 IndieSquare Inc.</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>false</analytics>
+    <guid></guid>
+    <ios>
+        <plist>
+            <dict>
+                <key>CFBundleDevelopmentRegion</key>
+                <string>en</string>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>CFBundleURLTypes</key>
+                <array>
+                    <dict>
+                        <key>CFBundleURLName</key>
+                        <string>inc.lireneosoft.counterparty</string>
+                        <key>CFBundleURLSchemes</key>
+                        <array>
+                            <string>indiewallet</string>
+                        </array>
+                    </dict>
+                </array>
+                <key>LSApplicationQueriesSchemes</key>
+                <array>
+                    <string>indiewallet</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>appicon.png</string>
+                    <string>appicon@2x.png</string>
+                    <string>appicon-120.png</string>
+                    <string>appicon-60.png</string>
+                    <string>appicon-60@2x.png</string>
+                    <string>appicon-60@3x.png</string>
+                    <string>appicon-72.png</string>
+                    <string>appicon-72@2x.png</string>
+                    <string>appicon-76.png</string>
+                    <string>appicon-76@2x.png</string>
+                    <string>appicon-Small-40.png</string>
+                    <string>appicon-Small-40@2x.png</string>
+                    <string>appicon-Small-40@3x.png</string>
+                    <string>appicon-Small-50.png</string>
+                    <string>appicon-Small-50@2x.png</string>
+                    <string>appicon-Small.png</string>
+                    <string>appicon-Small@2x.png</string>
+                    <string>appicon-Small@3x.png</string>
+                </array>
+                <key>UIBackgroundModes</key>
+                <array>
+                    <string>fetch</string>
+                </array>
+                <key>NSPhotoLibraryUsageDescription</key>
+                <string>This app requires access to the Photo library.</string>
+                <key>NSCameraUsageDescription</key>
+                <string>This app requires access to the Camera.</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <abi>armeabi-v7a</abi>
+        <manifest android:versionCode="80101004"
+            android:versionName="1.1.0" xmlns:tools="http://schemas.android.com/tools">
+            <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23"/>
+            <application android:allowBackup="false"
+                android:largeHeap="true"
+                android:theme="@style/Theme.IndiesquareTheme" tools:replace="android:icon">
+                <activity
+                    android:configChanges="keyboardHidden|orientation|screenSize"
+                    android:label="@string/app_name"
+                    android:name=".IndiesquarewalletActivity"
+                    android:screenOrientation="portrait" android:theme="@style/Theme.Titanium">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN"/>
+                        <category android:name="android.intent.category.LAUNCHER"/>
+                    </intent-filter>
+                </activity>
+                <activity android:launchMode="singleTask" android:name=".IntentActivity">
+                    <intent-filter>
+                        <action android:name="android.intent.action.VIEW"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                        <category android:name="android.intent.category.BROWSABLE"/>
+                        <data android:host="" android:scheme="indiewallet"/>
+                    </intent-filter>
+                    <intent-filter android:autoVerify="true">
+                        <action android:name="android.intent.action.VIEW"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                        <category android:name="android.intent.category.BROWSABLE"/>
+                        <data android:host="walletapp.indiesquare.me" android:scheme="https"/>
+                    </intent-filter>
+                </activity>
+            </application>
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.WAKE_LOCK"/>
+            <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.VIBRATE"/>
+            <uses-permission android:name="android.permission.CAMERA"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        </manifest>
+        <services>
+            <service type="interval" url="background/fetch.js"/>
+        </services>
+    </android>
+    <modules>
+        <module platform="iphone">ti.touchid</module>
+        <module platform="android">com.acktie.mobile.android.barcode</module>
+        <module platform="iphone">inc.indiesquare.customuseragent</module>
+        <module platform="android">ti.firebase</module>
+        <module platform="iphone">ti.firebase</module>
+        <module platform="iphone">com.mirasense.scanditsdk</module>
+        <module platform="android">com.universalavenue.ticrosswalk</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+    </deployment-targets>
+    <sdk-version>6.0.4.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+</ti:app>

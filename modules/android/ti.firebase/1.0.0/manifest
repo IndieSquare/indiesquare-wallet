@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 3
+architectures: armeabi-v7a x86
+description: tifirebase
+author: IndieSquare Inc.
+license: Specify your license
+copyright: @ 2017 IndieSquare Inc.
+
+# these should not be edited
+name: tifirebase
+moduleid: ti.firebase
+guid: 1131d066-a7e0-40db-aea6-e3f0cc218dc4
+platform: android
+minsdk: 6.0.4.GA

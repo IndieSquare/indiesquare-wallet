@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: CustomUserAgent
+author: IndieSquare Inc.
+license: Specify your license
+copyright: @2016 IndieSquare Inc.
+
+# these should not be edited
+name: CustomUserAgent
+moduleid: inc.indiesquare.customuseragent
+guid: b29ca78a-20c3-4afd-a2b8-0aabe4f7a320
+platform: iphone
+minsdk: 5.4.0.GA

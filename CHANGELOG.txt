@@ -1,0 +1,75 @@
+#ver 0.8.0(2015.11.3)
+About the latest update ver0.8.0
+
+What's new?
+
+- Quick XCP purchase
+Through ShapeShift APIs, you can now purchase xcp easily with btc within the wallet.
+Use XCP to issue a new token and trade Counterparty tokens on the Dex from IndieSquare Wallet!
+
+-Easier registration process
+You no longer need to enter a password to use IndieSquare Wallet.
+Just by rubbing the screen for a few seconds, you can create a new account easily and securely.
+If you already have a 12 word passphrase from anywhere else, you can now enter it word by word for smoother login.
+
+-Others
+Overall performance improvements.
+We are aware that some accounts have trouble creating new transactions including issuing a new token.
+We've been looking into this and will solve the issue as soon as we can. Thanks for the patience!
+-----
+
+#ver 0.7.1(2015.9.30)
+Bug fixed.
+-----
+
+#ver 0.7.0(2015.9.30)
+-UI improvement
+The decentralized exchange(Dex) as well as the send and receive tokens features are now more intuitive and easier to use.
+The addition of token icons gives the app a more personalized experience.
+
+-Display of fiat values
+Fiat values displayed more extensively in-app for sending, receiving and trading of tokens.
+You can now get a better sense of the value of your tokens in your local currency.
+
+-Performance improvement and bug fixes
+Bug fixes and all round performance and stability improvements for a better user experience.
+-----
+
+#ver 0.6.0(2015.8.24)
+- Added push-notifications, you will now receive a notification when your wallet receives new tokens.
+- Miner bug fixes.
+-----
+
+#ver 0.5.2(2015.7.4)
+Fixed a bug in new token issuance.
+-----
+
+#ver 0.5.1(2015.7.2)
+Achieved higher security with client side wallet encryption. Counterwallet is now even more secure and the only person that has access to the private key is you. See the source code from the link below.
+https://github.com/IndieSquare/counterwallet
+
+・What's new?
+- Token Infor JSON format compatible. Look up more detaileed profile of your favorite token.
+- Issue additional units of a token and edit the token description on mobile.
+- Copy public addresses in transaction history.
+
+・Other bug fixes
+
+We will continue to work to improve security and usability of Counterwallet. The further updates coming soon, be excited!
+-----
+
+#ver 0.4.0(2015.5.15)
+Improved the UI overall. More simple and intuitive.
+
+・New features
+- Added token search feature.
+- Added dividend feature.
+
+・Bug fixes
+- Fixed the problem where the maximum spendable amount pops up when you send.
+- Fixed the problem of missing the (.) when specifing the amount(Android).
+- Fixed other minor bugs.
+
+We will continue to improve usability as well as security to make Counterparty more accessible to everyone. Keep an eye on the next update!
+-----
+IndieSquare Inc.
