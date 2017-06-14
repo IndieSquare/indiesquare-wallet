@@ -1,3 +1,57 @@
+#ver1.1.0(2017.6.14)
+Updates
+- Implemented the custom setting of the fees.
+-----
+
+#ver1.0.3(2017.4.17)
+Updates
+- Linkage with two webapps: AddressBook, WatchOnlyAddress
+-----
+
+#ver1.0.0(2017.1.5)
+Updates
+- Access IndieBoard from the wallet directly
+- Send btc to bitcoin addresses which start from 3
+- Improve the token information view
+- Check more of your past transactions now in History
+- Other minor improvements and bug fixes
+-----
+
+#ver0.9.6(2016.8.10)
+Updates
+- Easier and more secure private key generation
+- Re-enabled XCP purchase through ShapeShift
+- Optimized transaction fee modes
+- Other minor bug fixes and improvements
+-----
+
+#ver0.9.5(2016.6.29)
+Calculate an optimal transaction fee based on the network congestion.
+Choose from 3 priority levels.
+-----
+
+#ver0.9.0(2016.4.19)
+Generate and manage multiple addresses on IndieSquare Wallet.
+Several UI improvements making IndieSquare Wallet even more convenient and intuitive.
+
+Updates
+- Multiple address capability
+- UI/UX improvements
+- Other bug fixes and improvements
+
+#ver0.8.4
+Minor update.
+-----
+
+#ver0.8.1 update!
+
+-UI improvement of the decentralized exchange(Dex)
+Improved the UI of the Dex. Now token trading is even more simple and intuitive.
+
+-Bug fixes
+Fixed the bug where sending more than a certain amount of token failed. Other minor bug fixes and improvements were also made.
+-----
+
 #ver 0.8.0(2015.11.3)
 About the latest update ver0.8.0
 
