@@ -1,18 +1,18 @@
 # IndieSquare wallet
 ---
 
-#Carry Counterparty wherever you go!
+# Carry Tokens wherever you go!
 IndieSquare Wallet makes it easier for everyone to unlock the true potential of tokens.<br />
 
-##What is IndieSquare Wallet?
+## What is IndieSquare Wallet?
 IndieSquare Wallet is the world’s first Counterparty wallet built for mobile devices.<br />
 For the first time you can send and receive tokens (as well as many other features) straight from your smartphone!
 
-##What is Counterparty?
+## What is Counterparty?
 "The world’s first protocol for decentralized financial tools" ―counterparty.io<br />
 Counterparty allows you to create custom “Tokens” on the Bitcoin blockchain and expand the possibility of Bitcoin
 
-##Features of the app
+## Features of the app
 
 * **Easy access to Counterparty tokens**<br />
 Use a 4 digit PIN or fingerprint(iOS) for quick access. Counterparty is available wherever and whenever.
@@ -35,9 +35,9 @@ IndieSquare Wallet supports multiple fiat currencies in addition to the dollar, 
 * **Compatible with Counterwallet.io**<br />
 Passphrases generated on our wallet are fully compatible with other Counterparty wallets.
 
-#Linkage with IndieSquare wallet.
+# Linkage with IndieSquare wallet.
 
-##CIPS
+## CIPS
 https://github.com/CounterpartyXCP/cips/blob/master/cip-0002.md
 
 **Sweep Implemantation**
@@ -83,6 +83,7 @@ method: **screen_to**
 [Optional] destination (string): The bitcoin address that to be sent to
 ```
 ex: Send 0.001 BTC.
+
 `indiewallet://screen_to?params={"screen": "send", "token": BTC, "destination": "1Gbdhsk..." }`
 
 
@@ -96,4 +97,5 @@ ex: Send 0.001 BTC.
 [Optional] currency (float): (default = XCP)
 ```
 ex: Buy 1 INDIESQUARE token for 1 USD.
+
 `indiewallet://screen_to?params={"screen":"dex", "token":"INDIESQUARE", "type":"buy", "amount":1, "price":1, "currency": "USD"}`
